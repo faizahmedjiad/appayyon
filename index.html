@@ -4,11 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
     <title>
       Appayyon | Escape to ultimate luxury and indulge in unparalleled
       experiences
     </title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header ----------------------------------------------------------------------------------------------------------------------------------->
+    <div class="header">
+      <div class="header-container container">
+        <img src="Images/appayyon-Logo.png" alt="appayyon main logo" />
+        <div class="head-menu">
+          <span class="head-menu--item">Facilities</span>
+          <span class="head-menu--item">Offers</span>
+          <span class="head-menu--item">About</span>
+          <span class="head-menu--item">Contacts</span>
+          <button class="head-menu--cta btn--secondery">View Packages</button>
+        </div>
+      </div>
+    </div>
+    <!-- Header ----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Hero Section ----------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="hero-image">
+      <div class="hero-overlay">
+        <div class="hero-content container">
+          <h1 class="hero-content--title">
+            Escape to Our Luxurious Resort in Paradise
+          </h1>
+          <p class="hero-content--description">
+            Relax and indulge in our luxurious paradise resort. With stunning
+            views and world-class amenities, escape the everyday and book your
+            ultimate luxury experience today
+          </p>
+          <div class="hero-content--cta">
+            <button class="btn btn--primary">View Packages</button>
+            <button class="btn btn--secondery">
+              <i class="fi fi-rs-marker btn--icon"></i> Get Direction
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- booking -->
+      <div class="booking-section">
+        <div class="hero-booking">
+          <!-- check in -->
+          <div class="hero-booking--input">
+            <i class="fi fi-rs-calendar-pen hero-booking--input__icon"></i>
+            <div class="hero-booking--input-group">
+              <label class="hero-booking--input__label" for="check-in"
+                >Check In</label
+              >
+              <input
+                class="hero-booking--input__field"
+                id="check-in"
+                type="text"
+                placeholder="mm/dd/yyyy"
+                onfocus="this.type='date'"
+                onblur="this.type='text'"
+              />
+            </div>
+          </div>
+          <!-- check out -->
+          <div class="hero-booking--input">
+            <i class="fi fi-rs-calendar-pen hero-booking--input__icon"></i>
+            <div class="hero-booking--input-group">
+              <label class="hero-booking--input__label" for="check-out"
+                >Check out</label
+              >
+              <input
+                class="hero-booking--input__field"
+                id="check-out"
+                type="text"
+                placeholder="mm/dd/yyyy"
+                onfocus="this.type='date'"
+                onblur="this.type='text'"
+              />
+            </div>
+          </div>
+          <!-- input visitor -->
+          <div class="hero-booking--input">
+            <i class="fi fi-rs-user hero-booking--input__icon"></i>
+            <div class="hero-booking--input-group">
+              <label class="hero-booking--input__label" for="visitor"
+                >Visitors</label
+              >
+              <div class="hero-booking--input__field__visitor">
+                <i class="fi fi-rs-minuss num-inp-icon"></i>
+                <input
+                  class="hero-booking--input__field hero-booking--input__field-number"
+                  id="visitor"
+                  type="number"
+                  value="2"
+                />
+                <i class="fi fi-rs-plus num-inp-icon"></i>
+              </div>
+            </div>
+          </div>
+          <!-- book now button -->
+          <button class="btn btn--primary">
+            <i class="fi fi-rs-cursor-finger btn--icon"></i>Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

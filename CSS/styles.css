@@ -1,0 +1,403 @@
+/* General ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+html {
+    color: var(--body-text);
+    font-size: 62.5%;
+}
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: var(--black);
+    height: 200vw;
+}
+
+
+
+:root {
+
+    /* Colors */
+
+    --black: #16181A;
+    --black-mid-light: #222426;
+    --black-light: #2B2F33;
+
+    --body-text: #8B949E;
+
+    --white: #fff;
+    --light-gray: #E6ECF2;
+    --gray: #CFD9E5;
+
+    --accent-dark: #CF6024;
+    --accent-16: rgba(230, 95, 23, 0.16);
+    --accent-light: #E55F17;
+
+    --success-dark: #2EA043;
+    --success-16: rgba(86, 211, 100, 0.16);
+    --success-Light: #56D364;
+
+    --warning-dark: #E3B341;
+    --warning-16: rgba(242, 204, 96, 0.16);
+    --warning-light: #F2CC60;
+
+    --error-dark: #DA3633;
+    --error-16: rgba(248, 81, 73, 0.16);
+    --error-light: #F85149;
+
+    /* Font Size */
+
+    --fs-body--small: 1.6rem;
+    --fs-body--large: 2rem;
+
+    --fs-footnote: 1.4rem;
+
+    /* Font Weight */
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* Line Height */
+    --lh-body: 150%;
+}
+
+
+
+/* Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Marcellus', serif;
+}
+
+
+h1 {
+font-size: 9.6rem;
+font-weight: 100;
+line-height: 100%;
+}
+
+h2 {
+font-size: 8rem;
+font-weight: 100;
+line-height: 110%;
+}
+
+h3 {
+font-size: 6.4rem;
+font-weight: 100;
+line-height: 110%;
+}
+
+h4 {
+font-size: 4.8rem;
+font-weight: 100;
+line-height: 120%;
+}
+
+h5 {
+font-size: 3.2rem;
+font-weight: 100;
+line-height: 120%;
+}
+
+h6 {
+font-size: 2.4rem;
+font-weight: 100;
+line-height: 120%;
+}
+
+
+
+/* Container */
+
+.container {
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
+
+
+input {
+    width: 100%;
+}
+
+/* General Ends ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Buttons ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.btn {
+    background: none;
+    border: none;
+    padding: 16px 32px;
+    font-size: var(--fs-body--small);
+    font-weight: var(--fw-bold);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn .btn--icon {
+    font-size: 2rem;
+    display: flex;
+}
+
+
+
+/* Primary */
+
+.btn--primary {
+    background: var(--accent-light);
+    color: var(--white);
+    box-shadow: 0px 0px 32px rgba(229, 95, 23, 0.32);
+    transition: 0.3s ease-in;
+}
+
+.btn--primary:hover {
+    background: var(--accent-dark);
+}
+
+
+
+/* Secondery */
+
+.btn--secondery {
+    background: rgba(230, 95, 23, 0.08);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--accent-light);
+    color: var(--accent-light);
+    transition: 0.3s ease-in;
+}
+
+.btn--secondery:hover {
+    background: var(--accent-16);
+}
+
+
+
+
+
+/* Buttons Ends ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Header ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: var(--black);
+    border-bottom: 1px solid var(--black-mid-light);
+    z-index: 1;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.head-menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+
+
+.head-menu--item {
+    font-size: var(--fs-body--small);
+    font-weight: var(--fw-regular);
+    color: var(--white);
+    padding: 32px 0;
+    border: 1px solid rgba(230, 95, 23, 0);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+}
+
+.head-menu--item:hover {
+    color: var(--accent-light);
+    border-bottom: 1px solid var(--accent-light);
+}
+
+
+
+.head-menu--cta{
+    padding: 8px 16px;
+    font-size: var(--fs-body--small);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+
+
+
+/* Header End ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Hero ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.hero-image {
+    background: url(../Images/hero-image.jpg) no-repeat center center / cover;
+    width: 100%;
+    height: 856px;
+    position: relative;
+}
+
+.hero-overlay {
+    background: linear-gradient(90deg, #16181A 0%, rgba(22, 24, 26, 0));
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content--title {
+    width: 70%;
+    color: var(--white);
+    margin-top: 216px;
+}
+
+.hero-content--description {
+    width: 70%;
+    font-size: var(--fs-body--large);
+    color: var(--white);
+    line-height: var(--lh-body);
+    margin: 8px 0 24px;
+    max-width: max-content;
+}
+
+.hero-content--cta {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+/* Hero Booking Section --------------------------------------------------*/
+
+.booking-section {
+    position: absolute;
+    width: 100%;
+    bottom: -7%;
+}
+
+.hero-booking {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    background: var(--black-mid-light);
+    border: 8px solid var(--black);
+    padding-left: 64px;
+    max-width: calc(1136px - 64px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+.hero-booking--input {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 0;
+}
+
+
+
+.hero-booking--input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-booking--input__field {
+    font-size: var(--fs-body--small);
+    font-weight: var(--fw-regular);
+    color: var(--white);
+    background: none;
+    border: none;
+    outline: none;
+    padding: none;
+    margin: none;
+    height: min-content;
+}
+
+.hero-booking--input__field::placeholder {
+    color: var(--body-text);
+}
+
+
+
+/* Label --------------------------------------------------*/
+
+.hero-booking--input__label {
+    font-size: var(--fs-footnote);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-body);
+    color: var(--white);
+}
+
+
+
+/* Input Icon --------------------------------------------------*/
+
+.hero-booking--input__icon {
+    font-size: 3.2rem;
+    color: var(--accent-light);
+    display: flex;
+}
+
+
+
+/* Visitor Number --------------------------------------------------*/
+
+.hero-booking--input__field-number {
+    width: 24px;
+    text-align: center;
+}
+
+.hero-booking--input__field__visitor {
+    display: flex;
+    gap: 16px;
+}
+
+.num-inp-icon {
+    background: var(--accent-16);
+    color: var(--accent-light);
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+
+
+
+/* Hero Ends ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Facilities & Services ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
