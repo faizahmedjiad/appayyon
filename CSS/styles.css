@@ -68,6 +68,9 @@ body {
 
     /* Line Height */
     --lh-body: 150%;
+
+    /* Transition */
+    --slow: all 0.2s ease-in;
 }
 
 
@@ -181,7 +184,7 @@ input {
     background: var(--accent-light);
     color: var(--white);
     box-shadow: 0px 0px 32px rgba(229, 95, 23, 0.32);
-    transition: 0.3s ease-in;
+    transition: var(--slow);
 }
 
 .btn--primary:hover {
@@ -198,7 +201,7 @@ input {
     backdrop-filter: blur(4px);
     border: 1px solid var(--accent-light);
     color: var(--accent-light);
-    transition: 0.3s ease-in;
+    transition: var(--slow);
 }
 
 .btn--secondery:hover {
@@ -245,7 +248,7 @@ input {
     padding: 32px 0;
     border: 1px solid rgba(230, 95, 23, 0);
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: var(--slow);
 
 }
 
@@ -424,5 +427,88 @@ input {
     justify-content: center;
     flex-direction: column;
     gap: 16px;
-    margin: 210px auto 48px;
+    margin: 210px auto 158px;
 }
+
+
+
+/* Facilities Card --------------------------------------------------*/
+
+.facilities-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+
+
+/* Card */
+
+.facilities-card {
+    position: relative;
+    padding: 126px 16px 16px;
+    background: var(--black-mid-light);
+    transition: var(--slow);
+}
+
+
+
+.fac-card--image {
+    width: calc(100% - 32px);
+    height: 220px;
+    object-fit: cover;
+    position: absolute;
+    padding: 0 16px;
+    top: -110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+
+.fac-card--title-grp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fac-card--icon {
+    font-size: 2.4rem;
+    color: var(--accent-light);
+    display: flex;
+    transition: var(--slow);
+}
+
+.fac-card--title {
+    font-size: var(--fs-body--large);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-body);
+    color: var(--white);
+}
+
+
+
+.fac-card--description {
+    font-size: var(--fs-body--small);
+    line-height: var(--lh-body);
+    padding-top: 8px;
+    transition: var(--slow);
+}
+
+
+
+/* Hovers */
+
+.facilities-card:hover {
+    background: var(--accent-light);
+}
+
+.facilities-card:hover .fac-card--icon, .facilities-card:hover .fac-card--description {
+    color: var(--white);
+}
+
+
+
+/* Facilities Card Ends --------------------------------------------------*/
