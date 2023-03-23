@@ -135,6 +135,21 @@ input {
     width: 100%;
 }
 
+
+
+/* Section */
+
+.section--header {
+    color: var(--white);
+}
+
+.section--description {
+    font-size: var(--fs-body--small);
+    line-height: var(--lh-body);
+}
+
+
+
 /* General Ends ---------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Buttons ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -401,3 +416,12 @@ input {
 
 
 
+.service-heading {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin: 210px auto 48px;
+}
