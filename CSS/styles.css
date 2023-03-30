@@ -210,6 +210,24 @@ input {
 
 
 
+.icn-btn {
+    font-size: 1.6rem;
+    color: var(--accent-light);
+    padding: 0.8rem;
+    background: rgba(230, 95, 23, 0.08);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--slow);
+    cursor: pointer;
+}
+
+.icn-btn:hover {
+    background: var(--accent-16);
+}
+
+
 
 
 /* Buttons Ends ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -511,4 +529,35 @@ input {
 
 
 
+/* Pagination */
+
+.card-pegination {
+display: flex;
+gap: 32px;
+align-items: center;
+margin: 16px auto 0;
+width: 100%;
+justify-content: center;
+}
+
+.card-pegination--indicator-grp {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+.card-pegination--indicator {
+    list-style: none;
+    width: 32px;
+    height: 4px;
+}
+
+.card-pegination--indicator__default {
+    background: var(--black-mid-light);
+}
+
+.card-pegination--indicator__active {
+    background: var(--accent-light);
+}
 /* Facilities Card Ends --------------------------------------------------*/
